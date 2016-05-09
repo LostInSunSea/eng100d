@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+    <!-- Changing up the head for icons, gotta import them from google
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,36 +9,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/materialize.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
+    the code above corresponds to the original head provided by austin -->
+    <head>
+      <br>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <center>
+    <img src="wwf-logo.jpg" alt="Logo" style="width:420px;height:491px;">
 
-        <!-- Add your site or application content here -->
-        <p>Basic Example Page</p>
-
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Card Title</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
-            </div>
+  <!-- Begin entire card with data entries -->
+  <div class="row">
+    <div class="col s12 m6 offset-m3">
+      <div class="card blue-grey darken-1 center">
+        <div class="card-content white-text">
+          <span class="card-title">Returning Volunteer</span>
         </div>
+          <div class="card-action">
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                      <label for="password">Name</label>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="number" type="number" class="validate">
+                      <label for="number">Number</label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <!-- End card with data entries -->
+            <!-- Submit Button -->
+            <center>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+              <!-- End Submit Button -->
+              <br>
+              <br>
+          </div>
+      </div>
+    </div>
+  </div>
+        <center>
+        <!-- New Volunteer Button -->
+        <a class="waves-effect waves-light btn-large">New Volunteer</a>
+        <!-- End New Volunteer Button -->
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

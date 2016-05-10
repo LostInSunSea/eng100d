@@ -4895,6 +4895,39 @@ small {
   font-size: 1.3rem;
   line-height: inherit;
 }
+/*Home screen page begin*/
+img.homescreen-logo {
+  max-width: 47%;
+}
+
+.homescreen-divider {
+  overflow: hidden;
+  height:30px;
+  background-color: #FFFFFF;
+}
+
+.homescreen-signin {
+  background-color: #4caf50;
+}
+
+.homescreen-signout {
+  background-color: #1a237e;
+}
+
+.homescreen-btn {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+  height: 105px;
+  width: 410px;
+  font-size: 30px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+/*Home screen page end*/
 
 .btn, .btn-large {
   text-decoration: none;

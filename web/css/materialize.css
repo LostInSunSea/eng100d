@@ -4895,23 +4895,36 @@ small {
   font-size: 1.3rem;
   line-height: inherit;
 }
-/*Home screen page begin*/
+/*Home screen page css begin*/
 img.homescreen-logo {
-  max-width: 47%;
+  max-width: 100%;
 }
 
-.homescreen-divider {
+.homescreen-top-divider {
+  overflow: hidden;
+  height:105px;
+}
+
+.homescreen-mid-divider {
+  overflow: hidden;
+  height:45px;
+}
+
+.homescreen-bot-divider {
   overflow: hidden;
   height:30px;
-  background-color: #FFFFFF;
 }
 
 .homescreen-signin {
-  background-color: #4caf50;
+  background-color: #272262;
 }
 
 .homescreen-signout {
-  background-color: #1a237e;
+  background-color: #8B8B8B
+}
+
+.homescreen-body {
+  background-color: #E1F479;
 }
 
 .homescreen-btn {
@@ -4923,11 +4936,11 @@ img.homescreen-logo {
   cursor: pointer;
   height: 105px;
   width: 410px;
-  font-size: 30px;
+  font-size: 33px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
 }
-/*Home screen page end*/
+/*Home screen page css end*/
 
 .btn, .btn-large {
   text-decoration: none;

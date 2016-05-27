@@ -21,123 +21,6 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-<<<<<<< HEAD:index.html
- 
-        <div class="section">
-            <div class="light-green lighten-2">
-                <div class="row">
-                    <div class="row">
-                    <div class="col s2">
-                        <img class="responsive-img" src="wwf-logo.jpg">
-                    </div>
-                    <div class="col s10">
-                        <h2>Sign Out Successful!</h2>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        
-        <div class="divider"></div>
-        
-        <!--END OF GREEN HEADER-->
-        
-        
-        
-        
-        <div class="section">
-            <div class="center">
-                <h5>Thank you for volunteering with Wild Willow Farm!</h5>
-                
-            
-                <p>Please sign out any youths under your supervision.</p>
-            <div/>
-            
-            
-                    
-                    <div class="row">
-                        <div class="center">
-                            <div class="input-field col s4 offset-s4">
-                                <input placeholder="Youth 1" id="youth_1" type="text" class="validate">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="center">
-                            <div class="input-field col s4 offset-s4">
-                                <input placeholder="Youth 2" id="youth_2" type="text" class="validate">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="center">
-                            <a class="waves-effect waves-light-green btn-flat">Add Youth</a>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                    
-                        <a class="waves-effect waves-light-green lighten-2 btn">Sign out Youth</a>
-                    </div>
-                    
-                    
-                            
-                            <div class="row">
-                                <div class="left-align">
-                                    <div class="col s12 offset-s2">
-                                        <h4>Volunteer Hours</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                            <table class="col s8 offset-s2">
-                                <thead>
-                                    <tr>
-                                        <th data-field="id">Name</th>
-                                        <th data-field="name">Today's Hours</th>
-                                        <th data-field="price">Total Hours</th>
-                                    </tr>
-                                </thead>
-                                
-                                <tbody>
-                                    <tr>
-                                        <td>Data</td>
-                                        <td>Data</td>
-                                        <td>Data</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </div>
-                            
-                    <div class="row">
-                        <div class="col 8 offset-s4 divider"></div>
-                    </div>
-                        
-                        
-                            <div class = "row">
-                                <div class="center-align">
-                                    <a class="waves-effect waves-light btn-large">Return to Home</a>
-                                </div>
-                            </div>
-                 
-                        
-                        
-                       
-                        
-               
-        
-        
-        <!--Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-                        
-=======
-
-
 
         <!-- spacing -->
         <div class="homescreen-top-divider"></div>
@@ -162,7 +45,6 @@
         <div class="button">
             <center><button homescreen onclick="window.location.href='/signout'" class="homescreen-btn homescreen-signout waves-effect waves-teal">SIGN OUT</button></td></center>
         </div>
->>>>>>> 4ff0c16c00cb0305f776cc32098d2ca429b153cf:web/homescreen.html
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

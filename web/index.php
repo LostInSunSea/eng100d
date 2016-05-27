@@ -36,14 +36,14 @@
 
         <!-- signin button -->
         <div class="button">
-            <center><button homescreen onclick="window.location.href='/signin'" class="homescreen-btn homescreen-signin waves-effect waves-teal">SIGN IN</button></td></center>
+            <center><button homescreen onclick="window.location.href='signinform.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">SIGN IN</button></td></center>
         </div>
 
         <div class="homescreen-bot-divider"></div>
 
         <!-- signout button -->
         <div class="button">
-            <center><button homescreen onclick="window.location.href='/signout'" class="homescreen-btn homescreen-signout waves-effect waves-teal">SIGN OUT</button></td></center>
+            <center><button homescreen onclick="window.location.href='signoutform.html'" class="homescreen-btn homescreen-signout waves-effect waves-teal">SIGN OUT</button></td></center>
         </div>
 
 

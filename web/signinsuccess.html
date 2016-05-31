@@ -51,26 +51,30 @@
                 <p>Please sign in any youth under your supervision.</p>
             <div/>
             
-            
-                    
-                    <div class="row">
-                        <div class="center">
-                            <div class="input-field col s4 offset-s4">
-                                <input placeholder="Youth 1" id="youth_1" type="text" class="validate">
+                    <script>
+                        clone();
+                    </script>
+                    <div id="addyouthsection">
+                        <div id="section1">
+                        <div class="row">
+                            <div class="center">
+                                <div class="input-field col s4 offset-s4" id="section1">
+                                    <input placeholder="Youth" id="youth_1" type="text" class="validate">
+                                </div>
                             </div>
                         </div>
+                        </div>
+                    
+                    
+                    
                     </div>
                     
                     <div class="row">
-                        <div class="center">
-                            <div class="input-field col s4 offset-s4">
-                                <input placeholder="Youth 2" id="youth_2" type="text" class="validate">
-                            </div>
+                        <div class="right">
+                            <a class="waves-effect waves-light-green btn-flat" onclick="addYouth();">+ Add Youth</a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="center">
-                            <a class="waves-effect waves-light-green btn-flat">Add Youth</a>
+                        <div class="leftt">
+                            <a class="waves-effect waves-light-green btn-flat" onclick="removeYouth();" id="btnremove">- Remove Youth</a>
                         </div>
                     </div>
                     
@@ -93,7 +97,29 @@
                  
                         
                         
-                       
+            <script>
+                var youthsection;
+                var clone;
+                function clone(){
+                    var clone = document.getElementById('section1').cloneNode(true);
+                    document.getElementById('addyouthsection').appendChild(clone);
+                }
+                function removeYouth(){
+                    if(document.getElementById('section1')==null){
+                        document.getElementById("btnremove").disabled=true;
+                    }
+                    var section = document.getElementById('section1');
+                    youthsection = section;
+                    section.parentNode.removeChild(section);
+                    
+                }
+            
+            function addYouth(){
+                
+                
+                document.getElementById('addyouthsection').appendChild(clone);
+            }
+            </script>
                         
                
         

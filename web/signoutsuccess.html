@@ -51,7 +51,7 @@
                 <p>Please sign out any youths under your supervision.</p>
             <div/>
             
-            
+                    <!--
                     
                     <div class="row">
                         <div class="center">
@@ -73,6 +73,47 @@
                             <a class="waves-effect waves-light-green btn-flat">Add Youth</a>
                         </div>
                     </div>
+                     -->
+                    <div class="section" id="addyouthsection">
+                        <div id="section1">
+                            <div class="row">
+                                <div class="row">
+                                    
+                                    
+                                    <div class="input-field col s6">
+                                        <input id="first_name" type="text" class="validate">
+                                            <label for="first_name"class="black-text">First Name</label>
+                                    </div>
+                                    
+                                    
+                                    <div class="input-field col s6">
+                                        <input id="last_name" type="text" class="validate">
+                                            <label for="last_name"class="black-text">Last Name</label>
+                                            </div>
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="right">
+                                    <a class="waves-effect waves-light-green btn-flat" onclick="removeYouth();">- Remove Youth</a>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    
+                    <div class="right">
+                        <a class="waves-effect waves-light-green btn-flat" onclick="copy();">+ Add Youth</a>
+                    </div>
+                    </div>
+
                     
                     
                     <div class="row">
@@ -120,6 +161,41 @@
                                     <a class="waves-effect waves-light btn-large">Return to Home</a>
                                 </div>
                             </div>
+                            
+                            <script>
+                                
+                                var youthsection;
+                                function removeYouth(){
+                                    
+                                    var section = document.getElementById('section1');
+                                    youthsection = section;
+                                    section.parentNode.removeChild(section);
+                                    
+                                }
+                            function copy(){
+                                if(document.getElementById('section1')==null){
+                                    var clone = youthsection.cloneNode(true);
+                                    document.getElementById('addyouthsection').appendChild(clone);
+                                    return;
+                                }
+                                
+                                var clone = document.getElementById('section1').cloneNode(true);
+                                document.getElementById('addyouthsection').appendChild(clone);
+                                
+                            }
+                            
+                            function checkTerms() {
+                                var agree = document.getElementById("agree").checked;
+                                
+                                
+                                if(!agree){
+                                    Materialize.toast('Please accept the Terms and Conditions', 4000);
+                                }
+                                
+                                
+                            }
+                            </script>
+
                  
                         
                         

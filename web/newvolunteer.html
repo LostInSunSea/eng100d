@@ -347,45 +347,52 @@
                     
         
         </div>
-<<<<<<< HEAD
-                        
-         <script>
-             
-             var youthsection;
-             function removeYouth(){
-                 
-                 var section = document.getElementById('section1');
-                 youthsection = section;
-                 section.parentNode.removeChild(section);
-                 
-             }
-=======
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="js/materialize.min.js"></script>
-        <script>
->>>>>>> 93a67ebf9b11f844f913f616bf0d37b4d39199d6
-             function copy(){
-                 if(document.getElementById('section1')==null){
-                     var clone = youthsection.cloneNode(true);
-                     document.getElementById('addyouthsection').appendChild(clone);
-                     return;
-                 }
-                 
-                 var clone = document.getElementById('section1').cloneNode(true);
-                 document.getElementById('addyouthsection').appendChild(clone);
-                 
-             }
-             
-            function checkTerms() {
-                var agree = document.getElementById("agree").checked;
-                            
-                            
-                if(!agree){
-                    Materialize.toast('Please accept the Terms and Conditions', 4000);
-                }
-                            
-                            
+
+    <script>
+    
+    var youthsection;
+    function removeYouth(){
+        
+        var section = document.getElementById('section1');
+        youthsection = section;
+        section.parentNode.removeChild(section);
+    }
+    
+        
+        function copy(){
+            if(document.getElementById('section1')==null){
+                var clone = youthsection.cloneNode(true);
+                document.getElementById('addyouthsection').appendChild(clone);
+                return;
             }
-         </script>
+            
+            var clone = document.getElementById('section1').cloneNode(true);
+            document.getElementById('addyouthsection').appendChild(clone);
+            
+        }
+        
+        function checkTerms() {
+            var agree = document.getElementById("agree").checked;
+            
+            
+            if(!agree){
+                Materialize.toast('Please accept the Terms and Conditions', 4000);
+            }
+            
+            
+        }
+    </script>
+
+
+<!--Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/materialize.min.js"></script>
     </body>
 </html>

@@ -280,14 +280,22 @@
                                 
                             </div>
                         </div>
+                        
+                        <div class="row">
+                            <div class="right">
+                                <a class="waves-effect waves-light-green btn-flat" onclick="removeYouth();">- Remove Youth</a>
+                            </div>
+                        </div>
+                            
+                    
+                        
                     </div>
+                </div>
+                    
+                <div class="right">
+                    <a class="waves-effect waves-light-green btn-flat" onclick="copy();">+ Add Youth</a>
                 </div>
                 
-                <div class="row">
-                    <div class="right">
-                        <a class="waves-effect waves-light-green btn-flat" onclick="copy();">+ Add Youth</a>
-                    </div>
-                </div>
                 
                 
                 
@@ -341,7 +349,21 @@
         </div>
                         
          <script>
+             
+             var youthsection;
+             function removeYouth(){
+                 
+                 var section = document.getElementById('section1');
+                 youthsection = section;
+                 section.parentNode.removeChild(section);
+                 
+             }
              function copy(){
+                 if(document.getElementById('section1')==null){
+                     var clone = youthsection.cloneNode(true);
+                     document.getElementById('addyouthsection').appendChild(clone);
+                     return;
+                 }
                  
                  var clone = document.getElementById('section1').cloneNode(true);
                  document.getElementById('addyouthsection').appendChild(clone);

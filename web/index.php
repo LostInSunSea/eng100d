@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
+   <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
@@ -15,11 +15,41 @@
         <link rel="stylesheet" href="css/materialize.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body class="homescreen-body">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <p>Hello</p>
+
+        <!-- Add your site or application content here -->
+
+        <!-- spacing -->
+        <div class="homescreen-top-divider"></div>
+
+        <!-- logo -->
+        <div class="logo">
+            <center><img class="homescreen-logo" src="img/WWF-Logo.png"></center>
+        </div>
+
+        <!-- spacing -->
+        <div class="homescreen-mid-divider"></div>
+
+
+        <!-- signin button -->
+        <div class="button">
+            <center><button homescreen onclick="window.location.href='signinform.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">SIGN IN</button></td></center>
+        </div>
+
+        <div class="homescreen-bot-divider"></div>
+
+        <!-- signout button -->
+        <div class="button">
+            <center>
+              <button homescreen class="homescreen-btn homescreen-signout waves-effect waves-teal">
+                SIGN OUT
+              </button>
+              </td>
+            </center>
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

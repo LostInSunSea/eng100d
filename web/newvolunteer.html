@@ -21,7 +21,8 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
- 
+        <script src="js/main.js"></script>
+
         <div class="section" style="margin-top: -20px">
             <div class="light-green lighten-2">
                 <div class="row">
@@ -35,15 +36,15 @@
                     </div>
                 </div>
             </div>
-        
+
         <div class="divider"></div>
-        
+
         <!--END OF GREEN HEADER-->
-        
-        
+
+
         <div class="row">
             <form class="col s12">
-                
+
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="first_name" type="text" class="validate">
@@ -56,28 +57,28 @@
                             <label for="last_name"class="black-text">Last Name</label>
                             </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="number" type="number" class="validate">
-                            <label for="password"class="black-text">Phone Number</label>
+                        <input id="number" type="tel" class="validate">
+                            <label for="number"class="black-text">Phone Number</label>
                             </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="email" type="email" class="validate">
                             <label for="email"class="black-text">Email</label>
                             </div>
                 </div>
-                
+
                 <!--DOB-->
                 <div class="row">
                     <div class="input-field col s3">
                         <label class="black-text">Age Range</label>
                     </div>
                     <div class="input-field col s3">
-                        <select class="browser-default">
+                        <select class="browser-default age-range">
                             <option value="" disabled selected></option>
                             <option value="1">Under 10</option>
                             <option value="2">11-17</option>
@@ -85,7 +86,7 @@
                             <option value="4">26-40</option>
                             <option value="5">41-65</option>
                             <option value="6">65+</option>
-                            
+
                         </select>
                     </div>
 
@@ -95,80 +96,80 @@
 
 
 
-                
+
                 </div>
-                
+
                 <div class="divider"></div>
-                
+
                 <div class="row">
                 <div class="col s6">
                     <h5>Emergency Contact</h5>
                 </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="name" type="text" class="validate">
-                            <label for="name"class="black-text">Name</label>
+                        <input id="contact_name" type="text" class="validate">
+                            <label for="contact_name"class="black-text">Name</label>
                     </div>
-                
+
                     <div class="input-field col s6">
-                        <input id="number" type="text" class="validate">
-                            <label for="number" class="black-text">Phone Number</label>
+                        <input id="contact_number" type="tel" class="validate">
+                            <label for="contact_number" class="black-text">Phone Number</label>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="input-field col s6">
-                            <input id="relationship" type="text" class="validate">
-                                <label for="relationship"class="black-text">Relationship</label>
+                            <input id="contact_relationship" type="text" class="validate">
+                                <label for="contact_relationship"class="black-text">Relationship</label>
                     </div>
                 </div>
-                
+
                 <!--
                 <div class="row">
-                    
+
                         <div class="row">
                             <div class="input-field col s12">
                                 <textarea id="medicalconditions" class="materialize-textarea" class="browser-default"></textarea>
-                                
+
                                 <label for="textarea1"><span class="black-text text-darken-2"><h5>Medical Conditions? (N/A if not applicable)</h5><span></label>
                             </div>
                         </div
-                    
+
                 </div>
                  -->
-                
-                
+
+
                 <div class="row">
                     <div class="col s6">
                         <h5>Add Youth Volunteer</h5>
                     </div>
                 </div>
-                
+
                 <div class="section" id="addyouthsection">
                     <div class="light-green lighten-2 youth" id="section1">
                         <div class="row">
                             <div class="row">
-                                
-                                
+
+
                                 <div class="input-field col s6">
-                                    <input id="first_name" type="text" class="validate">
-                                        <label for="first_name"class="black-text">First Name</label>
+                                    <input id="youth_first_name" type="text" class="validateYouth">
+                                        <label for="youth_first_name"class="black-text">First Name</label>
                                 </div>
-                                
-                                
+
+
                                 <div class="input-field col s6">
-                                    <input id="last_name" type="text" class="validate">
-                                        <label for="last_name"class="black-text">Last Name</label>
+                                    <input id="youth_last_name" type="text" class="validateYouth">
+                                        <label for="youth_last_name"class="black-text">Last Name</label>
                                 </div>
-                                
+
                                 <div class="row">
                                 <div class="input-field col s3">
                                     <label class="black-text">Age Range</label>
                                 </div>
                                 <div class="input-field col s3">
-                                    <select class="browser-default">
+                                    <select class="browser-default validateYouth">
                                         <option value="" disabled selected></option>
                                         <option value="1">Under 10</option>
                                         <option value="2">11-17</option>
@@ -176,75 +177,75 @@
                                         <option value="4">26-40</option>
                                         <option value="5">41-65</option>
                                         <option value="6">65+</option>
-                                        
+
                                     </select>
                                 </div>
                                 </div>
-                            
+
                             <div class="row">
                                 <div class="col s7 l6">
                                     <p>Fulfilling required community service volunteering?</p>
-                                
+
                                     <p>
                                     <input type="checkbox" id="req"/>
                                     <label for="req">Yes</label>
                                     </p>
                                 </div>
-                                
+
                             </div>
-                                
-                                
-                                
+
+
+
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="right">
                                 <a class="waves-effect waves-light-green btn-flat" onclick="removeYouth();">- Remove Youth</a>
                             </div>
                         </div>
-                            
-                    
-                        
+
+
+
                     </div>
                 </div>
-                    
+
                 <div class="right">
                     <a class="waves-effect waves-light-green btn-flat" onclick="copy();">+ Add Youth</a>
                 </div>
-                
-                
-                
-                
-                
+
+
+
+
+
                     <form action="#">
                         <div class="row">
                             <div class="col s5 l6">
                                 <p>I would like to receive email newsletters</p>
                             </div>
-                            
+
                             <div class="col s5 l3">
                                 <p>
                                     <input type="checkbox" id="test5" />
                                     <label for="test5"></label>
                                 </p>
                             </div>
-                            
+
                         </div>
-                        
+
                         <div class="col s12">
                             <h5>I agree to the terms and conditions below</h5>
                         </div>
-                    
+
                     <div class="row">
                         <div class="input-field col s12">
                             <textarea id="Terms" class="materialize-textarea" class="browser-default">The following terms and conditions (the "Terms and Conditions") govern your use of this web site, and any content made available from or through this web site, including any subdomains thereof (the "Web Site"). The Web Site is made available by Time Inc. ("Time Inc." or "we" or "us"). We may change the Terms and Conditions from time to time, at any time without notice to you, by posting such changes on the Web Site. BY USING THE WEB SITE, YOU ACCEPT AND AGREE TO THESE TERMS AND CONDITIONS AS APPLIED TO YOUR USE OF THE WEB SITE. If you do not agree to these Terms and Conditions, you may not access or otherwise use the Web Site.
                             </textarea>
-                            
-                            
+
+
                         </div>
                         </div>
-                        
+
                         <div class="col s5">
                             <p>
                             <input type="checkbox" id="agree"/>
@@ -252,51 +253,51 @@
                             </p>
                         </div>
                     </div>
-                    
-                   
-                   
-                    
+
+
+
+
                     <div class = "row">
                         <div class="center-align">
-                            <a class="waves-effect waves-light btn-large" onclick="checkTerms();">Submit Registration</a>
+                            <a class="waves-effect waves-light btn-large" onclick="checkTerms(); validateForm();">Submit Registration</a>
                         </div>
                     </div>
-                    
-        
+
+
         </div>
 
     <script>
-    
+
     var youthsection;
     function removeYouth(){
-        
+
         var section = document.getElementById('section1');
         youthsection = section;
         section.parentNode.removeChild(section);
     }
-    
-        
+
+
         function copy(){
             if(document.getElementById('section1')==null){
                 var clone = youthsection.cloneNode(true);
                 document.getElementById('addyouthsection').appendChild(clone);
                 return;
             }
-            
+
             var clone = document.getElementById('section1').cloneNode(true);
             document.getElementById('addyouthsection').appendChild(clone);
-            
+
         }
-        
+
         function checkTerms() {
             var agree = document.getElementById("agree").checked;
-            
-            
+
+
             if(!agree){
                 Materialize.toast('Please accept the Terms and Conditions', 4000);
             }
-            
-            
+
+
         }
     </script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

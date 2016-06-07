@@ -37,22 +37,23 @@
 
         <!-- signin button -->
         <div class="button">
-            <center><button homescreen onclick="window.location.href='signinform.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">Returning Volunteer</button></td></center>
+            <center><button homescreen onclick="window.location.href='signinform.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">Sign In</button></td></center>
         </div>
 
         <div class="homescreen-bot-divider"></div>
 
         <!-- signin button -->
         <div class="button">
-           <center><button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">New Volunteer</button></td></center>
+           <center><button homescreen onclick="window.location.href='signoutform.html'" class="homescreen-btn homescreen-signout waves-effect waves-teal">Sign Out</button></td></center>
         </div>
 
                 <div class="homescreen-bot-divider"></div>
+
         <!-- signout button -->
         <div class="button">
             <center>
-              <button homescreen class="homescreen-btn homescreen-signout waves-effect waves-teal">
-                SIGN OUT
+              <button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">
+                New Volunteer
               </button>
               </td>
             </center>

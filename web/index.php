@@ -52,7 +52,7 @@
         <!-- signout button -->
         <div class="button">
             <center>
-              <button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen2-btn homescreen-newv waves-effect waves-teal">
+              <button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen-btn homescreen-newv waves-effect waves-teal">
                 New Volunteer
               </button>
               </td>

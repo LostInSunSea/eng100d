@@ -4923,6 +4923,10 @@ img.homescreen-logo {
   background-color: #8B8B8B
 }
 
+.homescreen-newv {
+  background-color: #3c8b26
+}
+
 .homescreen-body {
   background-color: #E1F479;
 }
@@ -4936,6 +4940,20 @@ img.homescreen-logo {
   cursor: pointer;
   height: 105px;
   width: 410px;
+  font-size: 33px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.homescreen2-btn {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+  height: 125px;
+  width: 430px;
   font-size: 33px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;

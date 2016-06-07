@@ -44,7 +44,7 @@
 
         <!-- signin button -->
         <div class="button">
-           <center><button homescreen onclick="window.location.href='signoutform.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">Sign Out</button></td></center>
+           <center><button homescreen onclick="window.location.href='signoutform.html'" class="homescreen-btn homescreen-signout waves-effect waves-teal">Sign Out</button></td></center>
         </div>
 
                 <div class="homescreen-bot-divider"></div>
@@ -52,7 +52,7 @@
         <!-- signout button -->
         <div class="button">
             <center>
-              <button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen-btn homescreen-signout waves-effect waves-teal">
+              <button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen2-btn homescreen-newv waves-effect waves-teal">
                 New Volunteer
               </button>
               </td>

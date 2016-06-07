@@ -51,7 +51,7 @@
         <!-- signout button -->
         <div class="button">
             <center>
-              <button homescreen class="homescreen-btn homescreen-signout waves-effect waves-teal">
+              <button homescreen onclick="window.location.href='signoutform.html'" class="homescreen-btn homescreen-signout waves-effect waves-teal">
                 SIGN OUT
               </button>
               </td>

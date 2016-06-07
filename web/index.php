@@ -37,17 +37,12 @@
 
         <!-- signin button -->
         <div class="button">
-            <center><button homescreen onclick="window.location.href='signinform.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">Returning Volunteer</button></td></center>
+            <center><button homescreen onclick="window.location.href='signinform.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">Sign In</button></td></center>
         </div>
 
         <div class="homescreen-bot-divider"></div>
 
-        <!-- signin button -->
-        <div class="button">
-           <center><button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">New Volunteer</button></td></center>
-        </div>
 
-                <div class="homescreen-bot-divider"></div>
         <!-- signout button -->
         <div class="button">
             <center>
@@ -57,6 +52,13 @@
               </td>
             </center>
         </div>
+        <!-- signin button -->
+                <div class="button">
+                   <center><button homescreen onclick="window.location.href='newvolunteer.html'" class="homescreen-btn homescreen-signin waves-effect waves-teal">New Volunteer</button></td></center>
+                </div>
+
+                        <div class="homescreen-bot-divider"></div>
+
     </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

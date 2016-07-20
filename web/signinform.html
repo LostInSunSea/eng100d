@@ -42,7 +42,7 @@
                     </div>
                     <div class="row" style="text-align: center">
                         <div class="col s12">
-                            <a href="signinsuccess.html" class="waves-effect waves-light btn btn-large">Sign In</a>
+                            <a onclick="signin()" class="waves-effect waves-light btn btn-large">Sign In</a>
                         </div>
                     </div>
                 </div>
@@ -52,5 +52,34 @@
       <!-- End New Volunteer Button -->
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <script src="js/materialize.min.js"></script>
+      <script src="js/papaparse.js"></script>
+      <script>
+        $(document).ready(function() {
+          $.ajax({
+            type: "GET",
+            url: "Volunteers.csv",
+            dataType: "text",
+            success: function(data) {parse(data)}
+          });
+        });
+        var results;
+        function parse(data) {
+          results=Papa.parse(data,{header:true});
+        }
+        function signin() {
+          var name=document.getElementById('name').value.toLowerCase();
+          name = name.replace(/\s+/g, '');
+          var number=document.getElementById('number').value;
+          for(var i=0;i<results.data.length;i++){
+            var fName=results.data[i].FirstName.toLowerCase()+results.data[i].LastName.toLowerCase();
+            var pNumber=results.data[i].Phone.trim().slice(-4);
+            console.log("name"+i+": "+fName+"/"+name);
+            console.log("number"+i+": "+pNumber+"/"+number);
+            if(name.toString()==fName.toString() && number.toString()==pNumber.toString()){
+              console.log("hi")
+            }
+          }
+        }
+      </script>
     </body>
 </html>

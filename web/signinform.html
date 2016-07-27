@@ -10,8 +10,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css"> 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>       
+        <link rel="stylesheet" href="css/normalize.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link rel="stylesheet" href="css/materialize.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -76,12 +76,14 @@
             var pNumber=results.data[i].Phone.trim().slice(-4);
             console.log("name"+i+": "+fName+"/"+name);
             console.log("number"+i+": "+pNumber+"/"+number);
-            if(name==fName && number==pNumber){
+            if(name == fName && number == pNumber){
                 var d= new Date();
                 var time= d.getHours()+":"+d.getMinutes();
                 results.data[i].Start=time;
                 line=results.data[i];
-                $.post( "signin.php", { line: line, index: i } );
+                $.post( "signin.php", { line: line, index: i }, function(status){
+                  alert(status);
+                });
                 //change the window
             }
           }

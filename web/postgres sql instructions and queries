@@ -1,0 +1,36 @@
+using postgres sql
+
+CREATING TABLE
+------------------
+CREATE TABLE Volunteers (
+    "id" INT,
+    "FirstName" VARCHAR(8),
+    "LastName" VARCHAR(10) ,
+    "Phone" VARCHAR(12) ,
+    "Age" VARCHAR(5) ,
+    "Email" VARCHAR(31) ,
+    "Subscribed" VARCHAR(1) ,
+    "LiabilityForm" VARCHAR(1) ,
+    "Start" VARCHAR(4) ,
+    "Hours" INT,
+    "Student" VARCHAR(1) ,
+    "School" VARCHAR(4) ,
+    "GuardianId" VARCHAR(4) ,
+    "GuardianFirstName" VARCHAR(6) ,
+    "GuardianLastName" VARCHAR(4)
+);
+
+ADDING INTO TABLE
+----------------------
+INSERT INTO Volunteers VALUES (1,'Marvel', 'Hand','858-693-9471','65+','MarvelTHand@armyspy.com','T','T','None',0,'F','None','None','None','None');
+
+UPDATE TABLE
+---------------------
+UPDATE Volunteers
+SET "Start"='1030'
+WHERE id = 1;
+
+
+Export to CSV
+--------------------
+COPY Volunteers TO '/tmp/foobar.csv' DELIMITER ',' CSV HEADER;
